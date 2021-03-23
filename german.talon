@@ -1,5 +1,6 @@
 mode: user.german
 -
+settings(): speech.record_all = 1
 
 ^(englisch | english)$:
 	mode.disable("user.german")
