@@ -1,12 +1,14 @@
 mode: user.german
 -
-settings(): speech.record_all = 1
+settings(): 
+	speech.record_all = 1
+	speech.record_labels = 1
 
 ^(englisch | english)$:
 	mode.disable("user.german")
 	mode.enable("command")
 
-^german: skip()
+^switch to german: skip()
 
 ^unicode$:
 	user.enable_german_unicode()

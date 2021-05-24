@@ -1,6 +1,6 @@
 mode: command
 -
-^german$:
+^switch to german$:
 	mode.disable("command")
 	mode.enable("user.german")
 
